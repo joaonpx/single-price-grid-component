@@ -1,0 +1,166 @@
+/* ============================= global ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(179, 62%, 43%);
+  --secondary-color: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --dark-gray: hsl(218, 22%, 67%);
+
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: 'Karla', sans-serif;
+
+  background: var(--light-gray);
+}
+
+.main-container {
+  width: 28.1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+
+  margin-bottom: 0.5rem;
+}
+
+/* ============================= cards ============================= */
+
+.card-1 {
+  background: hsl(0, 0%, 100%);
+
+  padding: 2.3rem;
+
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-1 h2 {
+  color: var(--primary-color);
+
+  font-size: 1.7rem;
+
+  margin-bottom: 2.2rem;
+}
+
+.card-1 h3 {
+  color: var(--secondary-color);
+
+  font-size: 1.3rem;
+
+  margin-bottom: 2rem;
+}
+
+.card-1 p {
+  color: var(--dark-gray);
+
+  line-height: 1.8;
+}
+
+.card-2 {
+  background: var(--primary-color);
+
+  padding: 2.3rem;
+}
+
+.card-2 h2,
+.card-2 .price h1,
+.card-2 p,
+.card-2 a {
+  color: hsl(0, 0%, 100%);
+}
+
+.card-2 .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 0.8rem;
+}
+
+.card-2 .price h1 {
+  font-size: 2.8rem;
+
+  margin-right: 1.2rem;
+}
+
+.card-2 .price span {
+  color: hsla(0, 0%, 100%, 0.6);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card-2 p {
+  font-size: 1.4rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.card-2 .btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+
+  background: var(--secondary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 23.5rem;
+  padding: 1.2rem;
+
+  border-radius: 0.5rem;
+}
+
+.card-3 {
+  background: hsla(179, 62%, 43%, 0.8);
+
+  padding: 2.3rem;
+
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-3 h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.card-3 p {
+  color: hsla(0, 0%, 100%, 0.6);
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+/* ======================== footer ==================================== */
+
+.attribution {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+
+  margin-top: 8rem;
+}
+.attribution a {
+  color: var(--primary-color);
+
+  text-decoration: none;
+}
